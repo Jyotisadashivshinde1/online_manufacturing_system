@@ -1,0 +1,127 @@
+/* Parent Container */
+.parent {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f8ff; /* Light Blue Background */
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Form Wrapper */
+.form-2-wrapper {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #e0e0e0; /* Soft Border */
+}
+
+/* Form Title */
+.form-2-wrapper h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #6a5acd; /* Soft Purple */
+  font-weight: 600;
+}
+
+/* Input Fields */
+input.form-control {
+  padding: 14px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #dcdcdc; /* Soft Border Color */
+  border-radius: 25px;
+  background-color: #f9f9f9; /* Light Background for Inputs */
+  color: #333;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input.form-control::placeholder {
+  color: #a9a9a9; /* Grey Placeholder Text */
+}
+
+input.form-control:focus {
+  background-color: #ffffff;
+  border-color: #6a5acd; /* Purple Border on Focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(106, 92, 255, 0.3); /* Soft Purple Glow */
+}
+
+/* Login Button */
+button.login-btn {
+  background-color: #6a5acd; /* Soft Purple */
+  color: #fff;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+button.login-btn:hover {
+  background-color: #5e4a8e; /* Darker Purple on Hover */
+  transform: translateY(-3px);
+}
+
+/* Register Link */
+.register-test {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-test a {
+  color: #6a5acd; /* Soft Purple for Register Link */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.register-test a:hover {
+  color: #5e4a8e; /* Darker Purple on Hover */
+}
+
+/* Social Login Buttons */
+.social-login button {
+  background: #f0f8ff; /* Light Blue Background */
+  color: #333;
+  border: 1px solid #dcdcdc; /* Light Border */
+  padding: 12px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.social-login button:hover {
+  background: #e6f0ff; /* Slightly Darker Blue on Hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for Form Appearance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-2-wrapper {
+  animation: fadeInUp 0.5s ease-out;
+}

@@ -1,0 +1,258 @@
+/* Container for the entire About Us page */
+.about-us-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-header h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.about-header p {
+  font-size: 18px;
+  color: #777;
+}
+
+/* Our Story Section Styling */
+.company-overview {
+  margin-bottom: 50px;
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-overview h2 {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.company-overview h2::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: #2196f3;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+.overview-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.overview-text {
+  flex: 1;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #555;
+  line-height: 1.6;
+}
+
+.story-text {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.story-text strong {
+  color: #2196f3;
+  font-weight: bold;
+}
+
+.call-to-action {
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1976d2;
+  transform: translateY(-5px);
+}
+
+.overview-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.overview-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.overview-image img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .overview-content {
+      flex-direction: column;
+  }
+}
+
+/* Our Values Section Styling */
+.our-values {
+  margin-bottom: 50px;
+}
+
+.our-values h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.values-list {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.value-card {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.value-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.value-card h3 {
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.value-card p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Our Team Section Styling */
+.our-team {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.our-team h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  position: relative;
+}
+
+.our-team h2::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: #2196f3;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.team-member {
+  flex: 1;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px; /* Slight rounded corners like in Our Values */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
+  overflow: hidden; /* Ensures the image stays within the card boundary */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+.member-image {
+  width: 100%; /* Ensures the image fills the container width */
+  height: 220px; /* Fixed height for uniform display */
+  object-fit: contain; /* Ensures the full image is visible without cropping */
+  background-color: #f5f5f5; /* Light background for clarity */
+  border-radius: 10px; /* Adds subtle rounded corners */
+  display: block; /* Proper alignment */
+  margin: 0 auto; /* Centers the image */
+}
+
+.member-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px; /* Matches the upper section design */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.member-info {
+  padding: 15px;
+}
+
+.member-info h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.member-info p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
